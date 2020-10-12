@@ -1,5 +1,11 @@
 # TG-ReDial
-We released a topic-guided conversational recommendation dataset for research on conversational/interactive recommender systems: TG-ReDial v1.0. First, it incorporates topic threads to enforce natural semantic transitions towards the recommendation scenario. Second, it is created in a semi-automatic way, hence human annotation is more reasonable and controllable.
+We released a topic-guided conversational recommendation dataset for research on conversational/interactive recommender systems: TG-ReDial v1.0. It owns the following highlight:
+#### 1st：Multi-turn Topic-guided Conversation Recommendation
+Our dataset incorporates topic threads to enforce natural semantic transitions towards the recommendation scenario. Starting with a non-recommendation topic, the topic thread naturally guides the user to the recommendation scenario through a sequence of evolving topics through multi-turn interaction.
+#### 2nd：Semi-automatic Annotated Dataset
+We utilize ***real data*** to construct the recommended movies, topic threads, user profiles and utterances. And we propose semi-automatic approaches and novel rules to force human annotation into more reasonable and controllable.
+#### 3rd：Detailed User Background Information
+In our dataset, we incorporate each user with the user profile and interaction history, which are helpful to model the personality and preference of the user.
 
 ## Dataset Description
 ### Statistics
@@ -28,11 +34,13 @@ To help use this dataset for conversational recommendation task, we provide the 
 ## Reference
 If you use our dataset, please kindly cite our papers.
 [Towards Topic-Guided Conversational Recommender System](https://arxiv.org/abs/2010.04125)
-@misc{zhou2020topicguided,
-      title={Towards Topic-Guided Conversational Recommender System}, 
-      author={Kun Zhou and Yuanhang Zhou and Wayne Xin Zhao and Xiaoke Wang and Ji-Rong Wen},
-      year={2020},
-      eprint={2010.04125},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+```c
+@inproceedings{zhou2020topicguided,
+  title={Towards Topic-Guided Conversational Recommender System}, 
+  author={Kun Zhou and Yuanhang Zhou and Wayne Xin Zhao and Xiaoke Wang and Ji-Rong Wen},
+  booktitle = {Proceedings of the 28th International Conference on Computational
+               Linguistics, {COLING} 2020, Barcelona, Spain, December 8-11,
+               2020},
+  year      = {2020}
 }
+```
