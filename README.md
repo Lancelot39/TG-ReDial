@@ -8,6 +8,9 @@ We utilize ***real data*** to construct the recommended movies, topic threads, u
 In our dataset, we incorporate each user with the user profile and interaction history, which are helpful to model the personality and preference of the user.
 
 ## Dataset Description
+For everybody wants to play our dataset, we are very glad to inform you that thanks to Yuanhang's hard work, ***our dataset, codes and learned parameters can be downloaded now!!!*** We can turn to [**Dataset Link**](https://drive.google.com/drive/folders/1jLkNtUgzqBITQJsbOjSq20S2zzpY5Foj?usp=sharing) and the [**Code and Parameters Link**](https://github.com/RUCAIBox/TG_CRS_Code) for starting your travel in TG-ReDial!
+
+
 ### Statistics
 <img src="./Picture/DataStatistics.png" width=400 height=150 />
 
@@ -25,8 +28,8 @@ A major feature of our dataset is that we organize the conversation by topic thr
 
 To our knowledge, most of existing datasets mainly focus on cold-start scenario for CRS, while it is also important that CRS can leverage historical interaction data for existing users. Our dataset provides the possibility of training conversational recommendation algorithms with historical interaction data. It is also feasible to study other personalized tasks, since a user is involved in multiple conversations in our dataset. Note that, in order to protect user privacy, we only sample users with a large number of watching records. For derived user data (e.g., profile or watching records), we perform the anonymized operation and add randomized modification (e.g., removal, replacement or deletion). We also require that the retrieved review sentences have to be written via paraphrasing. Finally, we ask human annotators to manually trace the user identities with corresponding user data in our dataset. We do not include the data from the users that can be identified in the final dataset.
 
-## Download
-You can get this dataset from [GoogleDrive](https://drive.google.com/drive/folders/1jLkNtUgzqBITQJsbOjSq20S2zzpY5Foj?usp=sharing) or [BaiduNetDisk](https://pan.baidu.com/s/1fthFPz8Qjt54m4NR2G9AIA), the password for baidunetdisk is cc2o. ***We have added the interaction history of users into the netdisk recently, you`d better redownload it now.***
+## Dataset Download
+You can get this dataset from [GoogleDrive](https://drive.google.com/drive/folders/1jLkNtUgzqBITQJsbOjSq20S2zzpY5Foj?usp=sharing) or [BaiduNetDisk](https://pan.baidu.com/s/1fthFPz8Qjt54m4NR2G9AIA), the password for baidunetdisk is cc2o. 
 
 The dataset consists of four files:
 #### train_data.pkl, valid_data.pkl, test_data.pkl: 
@@ -34,8 +37,8 @@ the split train/valid/test data by the ratio of 8:1:1;
 #### User2TopicSent.pkl: 
 the background information of each user, consisting of user id, interaction sequence and user profile.
 
-## Baselines
-To help use this dataset for conversational recommendation task, we provide the code of the baseline models in our paper "Towards Topic-Guided Conversational Recommender System", you can turn to the following link for acquiring details. (Under arrangement)
+## Codes and Parameters Download
+For the convenience of using this dataset for conversational recommendation task, we provide the code and learned parameters of all models in our paper "Towards Topic-Guided Conversational Recommender System", you can turn to the project [**TG-CRS-Code**](https://github.com/RUCAIBox/TG_CRS_Code) for acquiring details.
 
 ## Reference
 If you use our dataset, please kindly cite our papers.
